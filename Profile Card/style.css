@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: azure;
+}
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 370px;
+  width: 100%;
+  background: #fff;
+  border-radius: 25px;
+  padding: 25px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+.profile-card::before {
+  content: "";
+  position: absolute;
+  height: 36%;
+  width: 100%;
+  background-color: cornflowerblue;
+  top: 0;
+  left: 0;
+  border-radius: 24px 24px 0 0;
+}
+.image {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background-color: rgb(83, 72, 55);
+  padding: 3px;
+  margin-bottom: 10px;
+}
+
+.image .profile-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid rgb(207, 202, 189);
+}
+.profile-card .text-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.text-data .name {
+  font-size: 20px;
+  font-weight: 500;
+}
+.text-data .job {
+  font-size: 15px;
+  font-weight: 400;
+}
+.profile-card .media-buttons {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+.media-buttons .link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  background-color: blue;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  margin: 0 8px;
+}
+.profile-card .buttons {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.buttons .button {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+  border: none;
+  border-radius: 25px;
+  margin: 0px 10px;
+  padding: 10px 24px;
+  background-color: rgb(87, 87, 197);
+  transition: all 0.3s ease;
+}
+
+.buttons .button:hover {
+  background-color: rgb(43, 197, 146);
+}
+
+.profile-card .analytics {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+}
+.analytics .data {
+  display: flex;
+  align-items: center;
+  color: black;
+  padding: 0 20px;
+}
+
+.data i {
+  font-size: 20px;
+  margin-right: 5px;
+}
