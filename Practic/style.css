@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+.coin {
+  height: 100px;
+  width: 100px;
+  background: linear-gradient(45deg, rgb(255, 255, 255), rgb(71, 206, 59));
+  border-radius: 50%;
+  transition: 0.6s;
+}
+.coin:hover {
+  transform: rotateY(180deg);
+}
