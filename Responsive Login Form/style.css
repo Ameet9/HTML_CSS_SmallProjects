@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: aquamarine;
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; */
+  overflow: hidden;
+}
+.container {
+  max-width: 440px;
+  padding: 0 20px;
+  margin: 170px auto;
+}
+.loginCard {
+  width: 100%;
+  background-color: azure;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+.loginHeader {
+  line-height: 90px;
+  background-color: rgb(32, 212, 152);
+  border-radius: 5px 5px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.loginHeader h2 {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: xx-large;
+}
+.loginCard form {
+  padding: 30px 20px 25px 20px;
+}
+.loginCard form .row {
+  height: 45px;
+  margin-bottom: 15px;
+  position: relative;
+}
+.loginCard form .row input {
+  height: 100%;
+  width: 100%;
+  padding-left: 60px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+form .row input:focus {
+  border-color: rgb(32, 212, 152);
+  box-shadow: inset 0px 0px 2px 2px rgba(26, 188, 156, 0.2);
+}
+.loginCard form .row i {
+  position: absolute;
+  width: 47px;
+  height: 100%;
+  background: rgb(32, 212, 152);
+  border: 1px solid rgb(32, 212, 152);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  border-radius: 5px 0 0 5px;
+  color: white;
+}
+.loginCard form .button input {
+  padding-left: 0px;
+  background: rgb(32, 212, 152);
+  color: white;
+  cursor: pointer;
+  border: 1px solid rgb(32, 212, 152);
+  font-size: 20px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+form .button input:hover {
+  background: rgb(21, 143, 102);
+  font-size: 24px;
+}
+.loginCard form .pass {
+  margin: -8px 0 20px 0;
+}
+.loginCard form .pass a {
+  color: rgb(32, 212, 152);
+  font-size: 17px;
+  text-decoration: none;
+}
+.loginCard form .pass a:hover {
+  text-decoration: underline;
+}
+.loginCard form .signup {
+  text-align: center;
+  margin-top: 20px;
+}
+.loginCard form .signup a {
+  color: rgb(32, 212, 152);
+  font-size: 20px;
+  text-decoration: none;
+}
+.loginCard form .signup a:hover {
+  text-decoration: underline;
+}
